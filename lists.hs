@@ -1,3 +1,4 @@
+
 hello = ['h', 'e', 'l', 'l', 'o']
 world = "world"
 
@@ -33,3 +34,6 @@ take 3 (repeat ("beatle" ++ ['j','u','i','c','e']))
 [x*2 | x <- [1..10], x*2 >= 12]
 
 length' xs = sum [1 | _ <- xs]
+
+removeNumbers st = [ c | c <- st, c `elem` ['a'..'z'] ++ ['A'..'z']]
+
